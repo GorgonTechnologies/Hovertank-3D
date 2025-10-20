@@ -9,3 +9,204 @@ It is released under the GNU GPLv2. Please see COPYING for license details.
 
 This release does not affect the game data files. You will need to legally
 acquire the game data in order to use the exe built from this source code.
+
+=============
+
+*About the game*
+
+
+In HOVERTANK 3-D you play mercenary Brick Sledge, hired by a beneficent
+organization to rescue people from cities targeted for limited nuclear 
+strikes.
+
+Get in, get 'em, and get out, before the missile hits.
+
+Climb on board your new HOVERTANK and go to it!
+
+
+*Getting started*
+
+
+For most players, starting this game is as simple as typing the following 
+at the DOS prompt:
+
+START followed by the [ENTER] key.
+
+
+However, if you encounter a problem with your SVGA graphics display (if 
+you have one), then type the following at the DOS prompt:
+
+START /COMP followed by the [ENTER] key.
+
+
+If you need further help, 
+call our Technical Support group at 1-318-221-8311.
+
+
+*Summary of how to play*
+
+The cities are full of nuclear mutants, armored patrols, and other terrors
+bent on your destruction.  You must enter the cities and rescue the 
+innocent humans needing your help.
+
+Here's the catch --- the nuclear missiles are on their way.  You must
+rescue the people... the ones that are still alive.  You and the 
+legendary HOVERTANK will not be teleported back to safety until you've
+accomplished your mission.
+
+You have an energy cannon as your main weapon.  Holding down the fire 
+button will build up power in the cannon.  Release the button to fire.
+
+After all the people in the area are either rescued or killed, a warp
+gate will appear.  And, it may not appear where you teleported in...
+
+
+Other things to know...
+
+
+Watch the time.  If that missile arrives, goodbye HOVERTANK.
+
+Be careful about picking up the people.  You don't want them killed by 
+your stray cannon shots (and, of course, you get more money for more 
+safely rescued people.)
+
+Good luck!
+
+*Controlling Play*
+
+Here's a quick summary chart of the controls you can use.
+
+   Left & Right arrows          Rotate left or right
+   Up arrow                     Forward thrust
+   Down arrow                   Reverse thrust
+   CTRL                         Fire a missile at an opponent
+   ALT                          Kick in the afterburner
+
+   
+   F1      Get help             F5      Reset the game
+   F2      Sound on/off         ESC     Quit play
+   F3      Keyboard setup       
+   F4      Joystick setup       
+
+IMPORTANT NOTE:  There is no "save game" function in this game.  
+                 Use your joystick and its buttons as appropriate,
+                 pressing Button 1 for CTRL and Button 2 for ALT.
+				 
+*Notice to SVGA users!*
+
+****************************************
+TO ALL USERS WITH SVGA GRAPHICS ADAPTERS
+****************************************
+
+If your computer has an SVGA graphics card, you may see some unwanted
+graphics effects when you begin to play the actual game. There is nothing
+to worry about if that happens. 
+
+To correct any problems with the graphics display of this game, type the
+following to begin play:
+
+START /COMP
+
+
+This should clear up any graphics display problems you might see on your
+SVGA system!
+
+
+*System requirements*
+
+
+Computer type: 
+286, 386, or 486 processor.
+
+Memory: 
+You need 640K of conventional memory with at least 450K free.
+
+Graphics mode: 
+EGA graphics required (supported on EGA, VGA, & SVGA cards).
+
+Sound support: 
+Ad Lib, Sound Blaster, and PC internal speaker.
+
+
+To receive free Technical Support for this game
+call 1-318-221-8311
+
+
+*Credits*
+
+John Carmack                    Programming
+John Romero                     Programming
+Tom Hall                        Creative Director
+Adrian Carmack                  Art Director
+
+
+*Warranties and Disclaimers*
+
+LIMITED WARRANTY AND DISCLAIMER
+
+SOFTDISK PUBLISHING WARRANTS THAT THIS DISK IS FREE FROM DEFECTS FOR 90 
+DAYS AND WILL REPLACE A DEFECTIVE DISK WITHIN THAT TIME PERIOD UPON RECEIPT
+OF SUCH DEFECTIVE DISK, POSTAGE PREPAID.  SOFTDISK FURTHER WARRANTS THAT 
+THIS SOFTWARE WILL PERFORM SUBSTANTIALLY IN ACCORDANCE WITH ANY WRITTEN 
+GUARANTEES PUBLISHED BY SOFTDISK.
+
+SOFTDISK PUBLISHING DISCLAIMS ALL OTHER WARRANTIES RELATING TO THIS 
+SOFTWARE, WHETHER EXPRESS, IMPLIED, STATUTORY OR IN ANY COMMUNICATION WITH
+YOU, AND SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF MERCHANTABILITY 
+OR FITNESS FOR A PARTICULAR PURPOSE OR USE. SOFTDISK PUBLISHING DOES NOT 
+WARRANT THAT THE OPERATION OF THIS SOFTWARE WILL BE UNINTERRUPTED OR 
+ERROR-FREE.
+
+SOME STATES DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE
+EXCLUSIONS MAY NOT APPLY TO YOU.  THIS WARRANTY GIVES YOU SPECIFIC LEGAL 
+RIGHTS.  YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM STATE TO STATE.
+
+LIMITATION OF LIABILITY
+
+IN NO EVENT WILL SOFTDISK PUBLISHING BE LIABLE FOR ANY DAMAGES, INCLUDING 
+LOSS OF DATA, LOST PROFITS, COST OF COVER OR OTHER SPECIAL, INCIDENTAL, 
+CONSEQUENTIAL OR INDIRECT DAMAGES ARISING FROM THE USE OR ATTEMPTED USE OF 
+THIS SOFTWARE OR ACCOMPANYING DOCUMENTATION, HOWEVER CAUSED AND ON ANY 
+THEORY OF LIABILITY. THIS LIMITATION WILL APPLY EVEN IF SOFTDISK PUBLISHING  
+HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  UNDER NO CIRCUMSTANCES
+SHALL THE LIABILITY OF SOFTDISK PUBLISHING EXCEED THE ACTUAL AMOUNT PAID TO
+AND RECEIVED BY SOFTDISK PUBLISHING IN CONNECTION WITH THE PARTICULAR COPY
+OF THE SOFTWARE IN QUESTION. SOME STATES DO NOT ALLOW THE LIMITATION OR 
+EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE 
+ABOVE LIMITATION MAY NOT APPLY TO YOU.
+
+THIS AGREEMENT SHALL BE GOVERNED BY THE LAWS OF THE STATE OF LOUISIANA 
+WITHOUT REGARD TO THE CHOICE OF LAW RULES OF SUCH STATE.
+
+
+Requirements for building this code:
+- game data
+- dosbox
+
+For dosbox:
+
+need to install Borland CPP 3.1 compiler, then 
+
+[autoexec]
+mount C ..
+C:
+set PATH=C:\CPP3.1\BIN
+set INCLUDE=C:\CPP3.1\INCLUDE
+set LIB=C:\CPP3.1\LIB
+
+BC.EXE
+
+options -> directories
+check that all includes and lib folders for linking are correct
+compile -> build all
+exit
+
+add data files
+- SOUNDS.HOV
+- CTLPANEL.HOV
+- DSOUND.HOV
+- EGAGRAPH.HOV
+- EGAHEAD.HOV
+- LEVEL01.HOV
+
+HOVER.EXE
